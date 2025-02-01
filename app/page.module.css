@@ -105,3 +105,49 @@ var(--border-radius);
       margin-top: 16px;
     }
 }
+
+.title {
+  position: relative;
+  z-index: 2;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.floatingChar {
+  display: inline-block;
+  animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* オプション: 文字に光る効果を追加 */
+.floatingChar {
+  display: inline-block;
+  animation: floating 2s ease-in-out infinite, 
+             glowing 3s ease-in-out infinite;
+  text-shadow: 0 0 5px rgba(0, 5, 255, 0.8);
+}
+
+@keyframes glowing {  
+  0% {
+    text-shadow: 0 0 5px rgba(0, 13, 255, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 0, 247, 0.8),
+                 0 0 30px rgba(255, 0, 0, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(0, 89, 255, 0.8);
+  }
+}
