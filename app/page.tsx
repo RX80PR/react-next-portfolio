@@ -16,7 +16,7 @@ export default async function Home() {
     <div>
       <h1 className={styles.title}>テクノロジーで世界を変える</h1>
       <p className={styles.description}>
-        私たちは市場をリードしているグローバルテックカンパニーです。
+        私たちは市場をリードしているグローバルテックカンパニです。
       </p>
     </div>
     <Image
