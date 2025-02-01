@@ -26,7 +26,7 @@ export default async function Home() {
             ))}
           </h1>
           <p className={styles.description}>
-            私たちは市場をリードしているグローバルテックカンパニです。
+            ここは私のポートフォリオサイトです。
           </p>
         </div>
         <Image
